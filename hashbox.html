@@ -2,66 +2,54 @@
 <html>
 <head>
   <title>HashBox</title>
-  <style>
-    /* Your existing styles */
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    textarea, input {
-      width: 100%;
-      margin-bottom: 20px;
-      padding: 10px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-    
-    /* Spinner styles */
-    .spinner {
-      display: none;
-      width: 40px;
-      height: 40px;
-      margin: 20px auto;
-      border: 4px solid #f3f3f3;
-      border-top: 4px solid #3498db;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+  <link rel="stylesheet" href="hashbox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>HashBox</h1>
- 
-  <!-- Hash Text -->
-  <textarea id="inputText" placeholder="Enter text to hash..."></textarea>
-  <button id="hashTextButton">Hash Text</button>
-
-  <!-- Hash File -->
-  <input type="file" id="inputFile" />
-  <button id="hashFileButton">Hash File</button>
-
-  <!-- Spinner -->
-  <div id="spinner" class="spinner"></div>
-
-  <!-- Output -->
-  <h4>Output:</h4>
-  <p id="outputText"></p>
-  
-  <textarea id="publishersCheckSum" placeholder="What is the Publisher's Checksum?"></textarea>
-
   <p id="checkSumMatch"></p>
+  <div id="outer-wrapper">
+    
+    <div id="wrapper">
+      
+      <textarea id="inputText" placeholder="Enter text to hash..."></textarea>
+      <input type="file" id="inputFile" />
+      <textarea id="publishersCheckSum" placeholder="What is the Publisher's Checksum?"></textarea>
+      <button id="hashTextButton">Hash Text</button>
+      <button id="hashFileButton">Hash File</button>
+    </div>
+    <div id="spinner" class="spinner"></div>
+    <!-- New checkbox container -->
+    <div class="checkbox-container">
+      <div class="checkbox-wrapper">
+        <form id="hashAlgorithmForm">
+          <label>
+            <input type="checkbox" name="hashAlgorithm" value="SHA-1" checked> SHA-1
+          </label>
 
+          <label>
+            <input type="checkbox" name="hashAlgorithm" value="SHA-256" checked> SHA-256
+          </label>
+          
+          <label>
+            <input type="checkbox" name="hashAlgorithm" value="SHA-384"> SHA-384
+          </label>
+          
+          <label>
+            <input type="checkbox" name="hashAlgorithm" value="SHA-512"> SHA-512
+          </label>
+        </form>
+            
+      </div>
+      <!-- Add more checkboxes here if needed -->
+    </div>
+    <p id="outputText"></p>
+  </div>
   <script src="hashbox.js"></script>
 </body>
 </html>
