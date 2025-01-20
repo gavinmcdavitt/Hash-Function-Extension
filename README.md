@@ -17,11 +17,18 @@ a style similar to HashCalc (the og).
 ## How can I install this in 5 minutes?
 Steps:
 1: Clone this repo
+
 2: In a firefox browser enter: about:debugging
+
 3.) Follow any setup then ensure you are on the This Firefox page.
+
 4.) Click on load Temporary add on
+
 5.) A popup window asking you to select a file. Select the file: hashbox.js
+
 6.) It should now be loaded. YAY!
+
+![image](https://github.com/user-attachments/assets/8270fc46-78e9-4505-9ef6-fa6e8e5a4da5)
 
 ## Reccomendations
 1.) Add a trigger for certain file type downloads?
