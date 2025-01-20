@@ -1,5 +1,12 @@
 # HashBox
 
+![image](https://github.com/user-attachments/assets/b0c33e8b-1f2d-47b2-9158-16f8738f788d)
+
+![image](https://github.com/user-attachments/assets/e160c6d2-3c13-48c2-8f93-9211a88d265f)
+
+![image](https://github.com/user-attachments/assets/01152244-9077-48c4-b989-a2ade900b2cd)
+
+
 ## What does this do?
 This is a firefox focused extension that supports hash encryption of (SHA-1, SHA-256, SHA-348, SHA-512) of both text and files. I am currently in the process of uploading this as an installation with Mozilla. 
 
