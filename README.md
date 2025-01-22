@@ -7,6 +7,9 @@
 ![image](https://github.com/user-attachments/assets/01152244-9077-48c4-b989-a2ade900b2cd)
 
 
+## How can I add this to my Firefox setup?
+[Click Me to Add This Extension]https://addons.mozilla.org/en-US/firefox/addon/hashbox/
+
 ## What does this do?
 This is a firefox focused extension that supports hash encryption of (SHA-1, SHA-256, SHA-348, SHA-512) of both text and files. I am currently in the process of uploading this as an installation with Mozilla. 
 
